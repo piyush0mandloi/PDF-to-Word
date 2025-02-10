@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to Word Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF to Word Converter</h1>
+        <form id="uploadForm" action="/convert" method="POST" enctype="multipart/form-data">
+            <input type="file" name="pdfFile" accept=".pdf" required />
+            <button type="submit">Convert to Word</button>
+        </form>
+    </div>
+</body>
+</html>
